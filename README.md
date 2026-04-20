@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Network Packet Scheduler Simulation
 
 A C++ and Node.js full-stack application simulating the scheduling differences between First In First Out (FIFO) and Weighted Fair Queuing (WFQ) mechanisms. The program features a beautifully modernized Graphical Web UI.
@@ -35,3 +36,7 @@ node server.js
 
 ### Step 3. Access Dashboard
 Navigate to http://localhost:3000/ to view the simulation dashboard. Use the forms to generate queues and process via algorithms visualizing the timeline comparisons.
+=======
+# networking-concept-simulation
+this is part of our project based learning course outcome for our c++ course. here we simulate the concept of fair queuing vs weighted-fair queuing using c++
+>>>>>>> 41ba2ab82f0d5b225628fefb9ff84cdbaacd91f5
