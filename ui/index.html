@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Packet Scheduler Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h1>NetSim Scheduler</h1>
+        </div>
+        <p class="subtitle">FIFO vs Weighted Fair Queuing Visualization</p>
+    </header>
+
+    <main class="dashboard">
+        <!-- Controls Panel -->
+        <section class="controls-panel glass-panel">
+            <h2>Simulation Setup</h2>
+            <div class="form-group">
+                <label for="packetCount">Number of Packets</label>
+                <input type="number" id="packetCount" value="10" min="5" max="30">
+            </div>
+            <div class="button-group">
+                <button id="generateBtn" class="btn btn-secondary">Generate Packets</button>
+                <button id="runBtn" class="btn btn-primary" disabled>Run Simulation &nbsp; &rarr;</button>
+            </div>
+        </section>
+
+        <!-- Initial Packets Display -->
+        <section class="initial-packets-panel glass-panel">
+            <div class="panel-header">
+                <h2>Incoming Queue (Arrival Order)</h2>
+                <div class="legend">
+                    <span class="badge priority-5">Prt 5 (High)</span>
+                    <span class="badge priority-3">Prt 3 (Med)</span>
+                    <span class="badge priority-1">Prt 1 (Low)</span>
+                </div>
+            </div>
+            <div id="initialPacketsList" class="packet-container horizontal-scroll">
+                <p class="empty-state">Generate packets to begin.</p>
+            </div>
+        </section>
+
+        <!-- Simulation View -->
+        <section class="simulation-panel">
+            <div class="algorithm-view glass-panel">
+                <div class="view-header">
+                    <h2>First In First Out (FIFO)</h2>
+                    <span class="status-badge" id="fifoStatus">Ready</span>
+                </div>
+                <div id="fifoTimeline" class="timeline">
+                    <!-- Animation area -->
+                    <div class="empty-timeline">Awaiting execution...</div>
+                </div>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <span class="label">Total Packets</span>
+                        <span class="value" id="fifoTotal">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="algorithm-view glass-panel">
+                <div class="view-header">
+                    <h2>Weighted Fair Queuing (WFQ)</h2>
+                    <span class="status-badge" id="wfqStatus">Ready</span>
+                </div>
+                <div id="wfqTimeline" class="timeline">
+                    <!-- Animation area -->
+                    <div class="empty-timeline">Awaiting execution...</div>
+                </div>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <span class="label">Total Packets</span>
+                        <span class="value" id="wfqTotal">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

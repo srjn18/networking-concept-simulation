@@ -1,0 +1,3 @@
+D:/4th sem/c++ project/build/CMakeFiles/simulator.dir
+D:/4th sem/c++ project/build/CMakeFiles/ALL_BUILD.dir
+D:/4th sem/c++ project/build/CMakeFiles/ZERO_CHECK.dir

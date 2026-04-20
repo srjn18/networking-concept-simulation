@@ -1,0 +1,126 @@
+{
+    "fifo": [
+        {
+            "arrivalTime": 3,
+            "id": 1,
+            "priority": 5,
+            "size": 1008
+        },
+        {
+            "arrivalTime": 5,
+            "id": 2,
+            "priority": 3,
+            "size": 166
+        },
+        {
+            "arrivalTime": 6,
+            "id": 3,
+            "priority": 4,
+            "size": 618
+        },
+        {
+            "arrivalTime": 7,
+            "id": 4,
+            "priority": 3,
+            "size": 1094
+        },
+        {
+            "arrivalTime": 10,
+            "id": 5,
+            "priority": 1,
+            "size": 992
+        },
+        {
+            "arrivalTime": 11,
+            "id": 6,
+            "priority": 1,
+            "size": 835
+        },
+        {
+            "arrivalTime": 12,
+            "id": 7,
+            "priority": 1,
+            "size": 732
+        },
+        {
+            "arrivalTime": 13,
+            "id": 8,
+            "priority": 2,
+            "size": 440
+        },
+        {
+            "arrivalTime": 15,
+            "id": 9,
+            "priority": 2,
+            "size": 445
+        },
+        {
+            "arrivalTime": 16,
+            "id": 10,
+            "priority": 4,
+            "size": 683
+        }
+    ],
+    "wfq": [
+        {
+            "arrivalTime": 3,
+            "id": 1,
+            "priority": 5,
+            "size": 1008
+        },
+        {
+            "arrivalTime": 6,
+            "id": 3,
+            "priority": 4,
+            "size": 618
+        },
+        {
+            "arrivalTime": 16,
+            "id": 10,
+            "priority": 4,
+            "size": 683
+        },
+        {
+            "arrivalTime": 5,
+            "id": 2,
+            "priority": 3,
+            "size": 166
+        },
+        {
+            "arrivalTime": 7,
+            "id": 4,
+            "priority": 3,
+            "size": 1094
+        },
+        {
+            "arrivalTime": 13,
+            "id": 8,
+            "priority": 2,
+            "size": 440
+        },
+        {
+            "arrivalTime": 15,
+            "id": 9,
+            "priority": 2,
+            "size": 445
+        },
+        {
+            "arrivalTime": 10,
+            "id": 5,
+            "priority": 1,
+            "size": 992
+        },
+        {
+            "arrivalTime": 11,
+            "id": 6,
+            "priority": 1,
+            "size": 835
+        },
+        {
+            "arrivalTime": 12,
+            "id": 7,
+            "priority": 1,
+            "size": 732
+        }
+    ]
+}

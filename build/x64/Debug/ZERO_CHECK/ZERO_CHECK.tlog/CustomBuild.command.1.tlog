@@ -1,0 +1,10 @@
+^D:\4TH SEM\C++ PROJECT\BUILD\CMAKEFILES\3A7E498F8F558B0BC3BC03BBBDA75C72\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/4th sem/c++ project" "-BD:/4th sem/c++ project/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/4th sem/c++ project/build/PacketSchedulerSimulation.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
